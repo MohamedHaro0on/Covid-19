@@ -1,0 +1,28 @@
+.Container{
+    width : 70% ;
+    margin : 20px auto  ;
+    display : flex ;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.Card{
+    border-radius : 10px ;
+    border-bottom-width: 10px;
+    border-bottom-style: solid; 
+    margin : 10px 0px !important ;
+}
+.Infected{
+    border-bottom-color :  rgba(0,0,255 ,.5) ;
+}
+.Recoverd{
+    border-bottom-color : rgba(0,255 ,0,.5) ;
+
+}
+.Deaths{
+    border-bottom-color :  rgba(255,0,0,.5)  ;
+}
+@media(max-width:1846px){
+    .Container{
+        width: 85% ;
+    }
+}
