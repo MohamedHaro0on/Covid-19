@@ -11,7 +11,6 @@ const CountryPicker = ({PickCountry}) => {
         }
         getData();
     }, []);
-    console.log("the Data", FetchedCountries)
     return (
         <div className={ClassNames.Container}>
             <FormControl className={ClassNames.FormControl}>

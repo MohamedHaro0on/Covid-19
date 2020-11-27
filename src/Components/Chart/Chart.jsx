@@ -11,7 +11,6 @@ const Chart = ({ data : {confirmed , deaths , recovered }, country }) => {
         }
         fetch();
     },[])
-    console.log("the Values", confirmed&& confirmed.value , deaths , recovered )
     const LineChart = dailyData.length ? (
         <Line
             data={{

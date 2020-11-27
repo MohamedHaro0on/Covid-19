@@ -2,7 +2,6 @@ import React from 'react'
 import { Card, CardContent, Grid, Typography } from "@material-ui/core";
 import ClassNames from "./Card.module.css";
 import CountUp from "react-countup";
-import cx from "classname" ;
 
 const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
     if (!confirmed) {
@@ -11,7 +10,6 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
     else {
         const CardsData = [{...confirmed , title : "Infected"}, {...recovered , title : "Recoverd"}, {...deaths , title : "Deaths"}];
         let Output = CardsData.map((element, index) => {
-            console.log("The Element " , element)
             let AppliedClasses = [ClassNames.Card , ClassNames[element.title]]
             return (
                 <Grid item component={Card} key = {index} xs = {12} md = {3} className = {AppliedClasses.join(" ")}>
